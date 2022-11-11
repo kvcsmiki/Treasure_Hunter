@@ -1,0 +1,29 @@
+{
+    "TreasureHunt": {
+        "checkpoints": [
+            {
+                "steps": 7416,
+                "file_path": "results/Run 4/TreasureHunt/TreasureHunt-7416.onnx",
+                "reward": -96.49049860239029,
+                "creation_time": 1668127157.2535,
+                "auxillary_file_paths": [
+                    "results/Run 4/TreasureHunt/TreasureHunt-7416.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 7416,
+            "file_path": "results/Run 4/TreasureHunt.onnx",
+            "reward": -96.49049860239029,
+            "creation_time": 1668127157.2535,
+            "auxillary_file_paths": [
+                "results/Run 4/TreasureHunt/TreasureHunt-7416.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1"
+    }
+}

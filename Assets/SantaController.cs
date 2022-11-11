@@ -8,7 +8,7 @@ using Unity.MLAgents.Sensors;
 public class SantaController : Agent
 {
     // Start is called before the first frame update
-    public float speed = 10;
+    private float speed = 100;
     public Transform targetKey;
     public Transform targetChest;
 
@@ -38,8 +38,8 @@ public class SantaController : Agent
         float chestX = Random.Range(chestSpawningArea.bounds.min.x, chestSpawningArea.bounds.max.x);
         float chestZ = Random.Range(chestSpawningArea.bounds.min.z, chestSpawningArea.bounds.max.z);
 
-        targetKey.localPosition = new Vector3(keyX, 0.5f, keyZ);
-        targetChest.localPosition = new Vector3(chestX, 0.5f, chestZ);
+        targetKey.position = new Vector3(keyX, 0.5f, keyZ);
+        targetChest.position = new Vector3(chestX, 0.5f, chestZ);
     }
 
     public override void CollectObservations(VectorSensor sensor) {
@@ -48,11 +48,11 @@ public class SantaController : Agent
         sensor.AddObservation(transform.localPosition.z);
 
         // The position of the key prefab
-        sensor.AddObservation(targetKey.localPosition.x);
-        sensor.AddObservation(targetKey.localPosition.z);
+        sensor.AddObservation(targetKey.position.x);
+        sensor.AddObservation(targetKey.position.z);
 
-        sensor.AddObservation(targetChest.localPosition.x);
-        sensor.AddObservation(targetChest.localPosition.z);
+        sensor.AddObservation(targetChest.position.x);
+        sensor.AddObservation(targetChest.position.z);
     }
 
     public override void OnActionReceived(ActionBuffers actions) {
