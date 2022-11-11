@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1668126516",
+        "python_version": "3.7.13 (default, Oct 18 2022, 13:40:53) \n[Clang 12.0.0 ]",
+        "command_line_arguments": "/opt/anaconda3/envs/unity/bin/mlagents-learn TreasureHunt.yaml --run-id=Run 1",
+        "mlagents_version": "0.28.0",
+        "mlagents_envs_version": "0.28.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1",
+        "numpy_version": "1.21.6",
+        "end_time_seconds": "1668126531"
+    },
+    "total": 15.311239666999999,
+    "count": 1,
+    "self": 0.015229542000000151,
+    "children": {
+        "run_training.setup": {
+            "total": 0.014702916999999927,
+            "count": 1,
+            "self": 0.014702916999999927
+        },
+        "TrainerController.start_learning": {
+            "total": 15.281307208,
+            "count": 1,
+            "self": 0.0003423330000007496,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 15.280787,
+                    "count": 1,
+                    "self": 15.280787
+                },
+                "TrainerController._save_models": {
+                    "total": 0.00017787499999855072,
+                    "count": 1,
+                    "self": 0.00017787499999855072
+                }
+            }
+        }
+    }
+}
