@@ -25,7 +25,7 @@ public class SantaController : Agent
 
     // Update is called once per frame
     public override void OnEpisodeBegin() {
-        transform.localPosition = new Vector3(0, 0.5f, 0);
+        transform.localPosition = new Vector3(0, 0.5f, -40);
         SpawnTargets();
         keyPickedUp = false;
     }
@@ -48,11 +48,13 @@ public class SantaController : Agent
         sensor.AddObservation(transform.localPosition.z);
 
         // The position of the key prefab
-        sensor.AddObservation(targetKey.position.x);
-        sensor.AddObservation(targetKey.position.z);
+        sensor.AddObservation(targetKey.localPosition.x);
+        sensor.AddObservation(targetKey.localPosition.z);
 
-        sensor.AddObservation(targetChest.position.x);
-        sensor.AddObservation(targetChest.position.z);
+        sensor.AddObservation(targetChest.localPosition.x);
+        sensor.AddObservation(targetChest.localPosition.z);
+
+        sensor.AddObservation(keyPickedUp);
     }
 
     public override void OnActionReceived(ActionBuffers actions) {
@@ -95,7 +97,7 @@ public class SantaController : Agent
             EndEpisode();
         }
         if(collision.collider.tag == "Key"){
-            targetKey.localPosition = new Vector3(0, -1, 0);
+            targetKey.localPosition =  new Vector3(0,-1,0);
             keyPickedUp = true;
             AddReward(1);
         }

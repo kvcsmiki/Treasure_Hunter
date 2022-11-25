@@ -2,7 +2,7 @@ behaviors:
   TreasureHunt:
     trainer_type: ppo
     time_horizon: 32 # Typical range: 32 - 2048
-    max_steps: 1e6 # Typical range: 5e5 - 1e7
+    max_steps: 1e7 # Typical range: 5e5 - 1e7
     hyperparameters:
       learning_rate: 3e-4 # Typical range: 1e-5 - 1e-3
       batch_size: 1024 # Typical range: (Continuous - PPO): 512 - 5120; (Continuous - SAC): 128 - 1024; (Discrete, PPO & SAC): 32 - 512.

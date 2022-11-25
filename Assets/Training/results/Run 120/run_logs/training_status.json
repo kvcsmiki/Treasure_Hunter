@@ -1,0 +1,65 @@
+{
+    "TreasureHunt": {
+        "checkpoints": [
+            {
+                "steps": 8499991,
+                "file_path": "results/Run 120/TreasureHunt/TreasureHunt-8499991.onnx",
+                "reward": 0.3932087489733329,
+                "creation_time": 1669325559.926046,
+                "auxillary_file_paths": [
+                    "results/Run 120/TreasureHunt/TreasureHunt-8499991.pt"
+                ]
+            },
+            {
+                "steps": 8999989,
+                "file_path": "results/Run 120/TreasureHunt/TreasureHunt-8999989.onnx",
+                "reward": 0.2355768373220717,
+                "creation_time": 1669325932.810559,
+                "auxillary_file_paths": [
+                    "results/Run 120/TreasureHunt/TreasureHunt-8999989.pt"
+                ]
+            },
+            {
+                "steps": 9499994,
+                "file_path": "results/Run 120/TreasureHunt/TreasureHunt-9499994.onnx",
+                "reward": 0.1940542612837194,
+                "creation_time": 1669326312.033962,
+                "auxillary_file_paths": [
+                    "results/Run 120/TreasureHunt/TreasureHunt-9499994.pt"
+                ]
+            },
+            {
+                "steps": 9999986,
+                "file_path": "results/Run 120/TreasureHunt/TreasureHunt-9999986.onnx",
+                "reward": 0.21841414207083418,
+                "creation_time": 1669326684.998935,
+                "auxillary_file_paths": [
+                    "results/Run 120/TreasureHunt/TreasureHunt-9999986.pt"
+                ]
+            },
+            {
+                "steps": 10000018,
+                "file_path": "results/Run 120/TreasureHunt/TreasureHunt-10000018.onnx",
+                "reward": 0.21841414207083418,
+                "creation_time": 1669326685.036552,
+                "auxillary_file_paths": [
+                    "results/Run 120/TreasureHunt/TreasureHunt-10000018.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000018,
+            "file_path": "results/Run 120/TreasureHunt.onnx",
+            "reward": 0.21841414207083418,
+            "creation_time": 1669326685.036552,
+            "auxillary_file_paths": [
+                "results/Run 120/TreasureHunt/TreasureHunt-10000018.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1"
+    }
+}
